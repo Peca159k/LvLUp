@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 800px;
+    background: rgb(255,0,147);
+background: linear-gradient(30deg, rgba(255,0,147,1) 0%, rgba(184,181,186,1) 35%, rgba(1,0,119,1) 65%);
+}
+
+.login-template {
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 36%;
+    text-align: center;
+}
+
+.avatar-logo {
+    width: 150px;
+    height: 150px;
+}
+
+input[type="text"],[type="password"] {
+    width: 300px;
+    padding: 10px 35px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.icons {
+    position: absolute;
+}
+
+#mini-avatar {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+#lock {
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+p, .remember, .forgot {
+    display: inline;
+}
+
+.forgot {
+    padding-left: 104px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+button {
+    background-color:#35373d;
+    color: white;
+    font-size: 22px;
+    opacity: 70%;
+    margin-top: 30px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.remember { 
+    color: #ffffff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkcontainer {
+    position: relative;
+    cursor: pointer;
+    width: 170px;
+    padding-left: 30px;
+    color: #ccc;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #1c1d1c;
+    opacity: 0.7;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkcontainer .checkmark:after {
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

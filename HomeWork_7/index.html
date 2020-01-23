@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login-template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="handler.php">
+        <div class="login-template">
+            <div class="logo">
+                <img class="avatar-logo" src="img/avatar.png">
+            </div>
+            <div class="username">
+                <img id="mini-avatar" class="icons" src="img/mini-avatar.png" width="25px" height="25px">
+                <input type="text" size="40" placeholder="Username">
+            </div>
+            <div class="password">
+                <img id="lock" class="icons" src="img/lock.png" width="25px" height="25px">
+                <input type="password" size="40" placeholder="Password">
+            </div>
+            <label class="checkcontainer">Remember me?
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            <div class="forgot"><i  ><a href="">Forgot password?</a></i  ></div>
+            <div><button type="submit" class="button_login">LOGIN</button></div>
+        </div>
+    </form>
+</body>
+</html>
