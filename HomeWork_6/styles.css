@@ -1,4 +1,9 @@
 #sports {
     display: flex;
-    text-align: center; 
+    text-align: center;
+    justify-content: space-between; 
+}
+
+div {
+    display: inline;
 }
