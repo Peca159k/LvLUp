@@ -1,26 +1,132 @@
+.result {
+    margin-top: 50px;
+    display: inline-block;
+}
+
 #out {
     display: inline;
 }
 
-button {
+.dws {
+    position: absolute;
+    left: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.dws1 {
+    position: absolute;
+    left: 90px;
+}
+
+.dws2 {
+    position: absolute;
+    left: 150px;
+}
+
+.dws3 {
+    position: absolute;
+    left: 210px;
+}
+
+.plus {
+    position: absolute;
     text-align: center;
-    width: 30px;
-    height: 30px;
-
+    width: 16px;
+    height: 16px;
+    animation: plus .9s ease-in-out infinite;
 }
 
-#plus:hover, #minus:hover, #multiply:hover, #division:hover {
-    animation-name: plus;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+.minus {
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    animation: plus .9s ease-in-out infinite;
 }
 
-@keyframes plus {
-    from {
+.multiply {
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    animation: plus .9s ease-in-out infinite;
+}
+
+.division {
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    animation: plus .9s ease-in-out infinite;
+}
+
+.text {
+    opacity: 0;
+    position: absolute;
+    text-transform:  uppercase;
+    font-weight: 700;
+    top: 0;
+    left: -11px;
+    font-size: 15px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+.text1 {
+    opacity: 0;
+    position: absolute;
+    text-transform:  uppercase;
+    font-weight: 700;
+    top: 0;
+    left: -16px;
+    font-size: 15px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+.text2 {
+    opacity: 0;
+    position: absolute;
+    text-transform:  uppercase;
+    font-weight: 700;
+    top: 0;
+    left: -31px;
+    font-size: 15px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+ 
+.text3 {
+    opacity: 0;
+    position: absolute;
+    text-transform:  uppercase;
+    font-weight: 700;
+    top: 0;
+    left: -26px;
+    font-size: 15px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+
+.pulse:hover img {
+    transition: .5s ease-in-out;
+    transform: scale(0);
+}
+
+.pulse:hover .text, .pulse:hover .text1, .pulse:hover .text2, .pulse:hover .text3{
+    transform: scaleX(1);
+    transition:  .5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+@keyframes plus{
+    0% {
         transform: rotate(0deg);
     }
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }
